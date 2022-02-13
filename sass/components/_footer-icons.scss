@@ -1,0 +1,40 @@
+.footer-sn {
+  margin: 12px 0 0 70px;
+}
+.invitation {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  color: $primaryWhiteColor;
+  margin-bottom: 20px;
+}
+.icons {
+  display: flex;
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $primaryWhiteColor;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__image {
+    justify-content: center;
+    fill: currentColor;
+  }
+}
+
+.icons__item + .icons__item {
+  margin-left: 10px;
+}
+
+.icons__link:hover,
+.icons__link:focus {
+  background-color: $accentColor;
+}
