@@ -1,8 +1,17 @@
 .filters-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 
   &__button {
     background-color: $secondaryBgColor;
@@ -29,6 +38,11 @@
   }
 }
 
-.filters-list__item + .filters-list__item {
-  margin-left: 8px;
+.filters-list__item {
+  margin-left: 4px;
+  margin-right: 4px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }

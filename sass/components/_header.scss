@@ -1,11 +1,50 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 
-  &__container {
-    display: flex;
-  }
+  // &__container {
+  //   display: flex;
+  // }
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: 2px solid rebeccapurple;
+  width: 40px;
+  height: 40px;
 }
 
+.menu-button .icon-menu {
+  display: none;
+}
+.menu-button .icon-close {
+  display: inline-flex;
+}
+
+.menu-button.is-open .icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-menu {
+  display: inline-flex;
+}
+.menu-container {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+
+  &.is-open {
+    display: block;
+  }
+}
 .logo {
   color: $titleTextColor;
   font-family: Raleway;
@@ -34,18 +73,18 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  display: block;
+  // display: block;
   padding: 32px 0;
 }
 
 .header__nav {
-  display: flex;
+  // display: flex;
   align-items: center;
 }
 
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  // display: flex;
+  // margin-left: 93px;
 
   &__item {
     margin-right: 50px;
@@ -73,34 +112,25 @@
   color: $accentColor;
 }
 
-.site-nav__link.current::after {
-  display: block;
-  content: '';
-  /* outline: 4px solid red; */
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $accentColor;
-  position: absolute;
-  bottom: -1px;
-}
+// .site-nav__link.current::after {
+//   display: block;
+//   content: '';
+//   /* outline: 4px solid red; */
+//   width: 100%;
+//   height: 4px;
+//   border-radius: 2px;
+//   background-color: $accentColor;
+//   position: absolute;
+//   bottom: -1px;
+// }
 
 .contacts {
-  display: flex;
+  // display: flex;
   align-items: center;
   margin-left: auto;
 
   &__link {
-    display: flex;
-    align-items: center;
-
-    color: $primaryTextColor;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__link {
-    display: flex;
+    // display: flex;
     align-items: center;
 
     color: $primaryTextColor;
