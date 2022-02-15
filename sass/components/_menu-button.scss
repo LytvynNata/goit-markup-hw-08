@@ -1,0 +1,45 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 11px;
+  border: none;
+  background-color: transparent;
+  // outline: 2px solid rebeccapurple;
+  width: 40px;
+  height: 40px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-button:hover,
+.menu-button:focus {
+  fill: $accentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+.menu-button .icon-close {
+  display: inline-flex;
+}
+
+.menu-button.is-open .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu {
+  display: inline-flex;
+}
