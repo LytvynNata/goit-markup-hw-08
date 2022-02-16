@@ -45,6 +45,7 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -422,20 +423,40 @@ textarea {
   padding-top: 94px;
   padding-bottom: 0;
 }
+@media screen and (max-width: 1199px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
-.feature-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .feature-list__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
   height: 120px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -447,25 +468,57 @@ textarea {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+
 .feature-list__title {
   color: #212121;
   font-size: 14px;
   line-height: 1.14;
   margin-top: 0;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .feature-list__title {
+    text-align: center;
+  }
+}
+
 .feature-list__content {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.feature-list__item {
-  width: 270px;
-}
-.feature-list__item + .feature-list__item {
-  margin-left: 30px;
-}
+@media screen and (max-width: 767px) {
+  .feature-list__item {
+    width: 450px;
+  }
 
+  .feature-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature-list__item {
+    width: 354px;
+  }
+
+  .feature-list__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+
+  .feature-list__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list__item {
+    width: 270px;
+  }
+
+  .feature-list__item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .activity__section {
     display: none;
