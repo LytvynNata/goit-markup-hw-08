@@ -33,6 +33,14 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-link {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
+
 .address {
   line-height: 1.71;
   font-style: normal;

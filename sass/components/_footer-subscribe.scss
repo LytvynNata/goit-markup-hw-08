@@ -9,6 +9,10 @@
     margin-left: 93px;
     margin-top: 12px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   &__text-title {
     display: flex;
@@ -43,6 +47,7 @@
 .js-speaker-form .input {
   height: 50px;
   padding-left: 16px;
+  margin-bottom: 20px;
 
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -73,7 +78,8 @@
 .subscribe .btn-submit {
   display: flex;
   justify-content: center;
-
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   padding: 10px 0;

@@ -1083,6 +1083,13 @@ textarea {
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-link {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
 .address {
   line-height: 1.71;
   font-style: normal;
@@ -1134,6 +1141,12 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer-sn {
     margin: 12px 0 0 70px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-sn {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .invitation {
@@ -1205,6 +1218,12 @@ textarea {
     margin-top: 12px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .subscribe__text-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1242,6 +1261,7 @@ textarea {
 .js-speaker-form .input {
   height: 50px;
   padding-left: 16px;
+  margin-bottom: 20px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -1278,6 +1298,8 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   padding: 10px 0;
