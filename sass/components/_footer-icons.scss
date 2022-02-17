@@ -1,6 +1,15 @@
-.footer-sn {
-  margin: 12px 0 0 70px;
+@media screen and (max-width: 1199px) {
+  .footer-sn {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .footer-sn {
+    margin: 12px 0 0 70px;
+  }
+}
+
 .invitation {
   text-transform: uppercase;
   font-weight: 700;
@@ -10,6 +19,10 @@
 }
 .icons {
   display: flex;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
 
   &__link {
     display: flex;
