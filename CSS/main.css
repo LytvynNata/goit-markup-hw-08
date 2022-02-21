@@ -1464,6 +1464,7 @@ textarea {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  z-index: 9;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
