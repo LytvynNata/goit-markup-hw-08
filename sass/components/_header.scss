@@ -126,11 +126,11 @@
   .contacts__link {
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.16;
   }
-  // .site-nav {
-  //   margin-right: auto;
-  // }
 }
+
 @media screen and (min-width: 1200px) {
   .contacts__item--right {
     margin-right: 50px;
@@ -140,4 +140,15 @@
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__icon--envelope {
+    width: 14px;
+    height: 10px;
+  }
+  .contacts__icon--smart {
+    width: 10px;
+    height: 14px;
+  }
 }

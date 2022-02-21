@@ -917,6 +917,8 @@ textarea {
   .contacts__link {
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -929,6 +931,17 @@ textarea {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__icon--envelope {
+    width: 14px;
+    height: 10px;
+  }
+
+  .contacts__icon--smart {
+    width: 10px;
+    height: 14px;
+  }
+}
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -1481,6 +1494,9 @@ textarea {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
+}
+.mobile-menu-link:hover, .mobile-menu-link:focus {
+  color: #2196f3;
 }
 
 .mobile-menu-link.current {
