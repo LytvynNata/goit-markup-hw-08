@@ -9,19 +9,23 @@
   margin-left: auto;
   // border: 2px solid red;
 
-  &:hover,
-  &:focus {
-    fill: $accentColor;
-  }
-
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
+.menu-open-btn:hover,
+.menu-open-btn:focus {
+  fill: $accentColor;
+}
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  fill: $accentColor;
+}
+
 .menu-close-btn {
   margin-top: -48px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .mobile-menu {

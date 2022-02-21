@@ -1437,11 +1437,6 @@ textarea {
   display: block;
   margin-left: auto;
 }
-.menu-open-btn:hover, .menu-open-btn:focus,
-.menu-close-btn:hover,
-.menu-close-btn:focus {
-  fill: #2196f3;
-}
 @media screen and (min-width: 768px) {
   .menu-open-btn,
 .menu-close-btn {
@@ -1449,9 +1444,19 @@ textarea {
   }
 }
 
+.menu-open-btn:hover,
+.menu-open-btn:focus {
+  fill: #2196f3;
+}
+
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  fill: #2196f3;
+}
+
 .menu-close-btn {
   margin-top: -48px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .mobile-menu {
