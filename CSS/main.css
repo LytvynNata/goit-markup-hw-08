@@ -1244,6 +1244,11 @@ textarea {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    margin-bottom: 50px;
+  }
+}
 .filters-list__button {
   background-color: #f5f4fa;
   font-weight: 500;
@@ -1431,6 +1436,11 @@ textarea {
   border: none;
   display: block;
   margin-left: auto;
+}
+.menu-open-btn:hover, .menu-open-btn:focus,
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .menu-open-btn,
